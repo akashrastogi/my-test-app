@@ -1,0 +1,20 @@
+{
+  "name": "my-test-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "author": "Akash Rastogi <akash_rastogi@live.com>",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "compression": "^1.4.4",
+    "express": "^4.12.4",
+    "express-winston": "^0.3.1",
+    "forever": "^0.14.1",
+    "helmet": "^0.9.1",
+    "jade": "^1.10.0",
+    "winston": "^1.0.0",
+    "jsonfile": "^2.2.1"
+  }
+}
