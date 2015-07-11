@@ -36,9 +36,11 @@ module.exports.postData = function(req, res) {
 
 module.exports.getData = function(req, res) {
     console.log('Receive a get call on /get-data.');
-    var data = {
-        'name': 'Akash',
-        'city': 'New Delhi'
-    };
-    res.status(200).end(JSON.stringify(data, 0, 4));
+
+    jsonfile.readFile(fileName, function(err, obj) {
+        if (err) {
+            res.status(500).end('Some thing went wrong.');
+        }
+        else res.status(200).end(JSON.stringify(obj, 0, 4));
+    });
 }

@@ -1,0 +1,10 @@
+node_modules/
+log/
+uploaded_csv_files/
+bin/
+public/vendor/
+database.json
+
+log/server.log
+
+log/error.log
