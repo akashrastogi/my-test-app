@@ -19,7 +19,8 @@ module.exports.postData = function(req, res) {
             array.push(receivedData);
         } else { // file exists
             array = obj;
-            array.push(receivedData);
+            // insert at 0 indes(top)
+            array.splice(0, 0, receivedData);
         }
 
         // write file
